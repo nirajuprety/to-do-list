@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "eih24u3DP88udtI/eEar6/xIoZEHHLkFaYWcZ1sYNcWQ2Ad4lbEO89p9BswmFELqM8SFpWXySKhtwtZr4xgKCA==",
+  "success": true,
+  "projectFilePath": "D:\\visual studio\\programms\\todolist\\todolist\\todolist.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\hp\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.25\\microsoft.netcore.app.host.win-x64.3.1.25.nupkg.sha512"
+  ],
+  "logs": []
+}
