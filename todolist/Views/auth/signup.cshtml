@@ -1,46 +1,73 @@
 ﻿@{
-        ViewData["Title"] = "Loging Page";
+        ViewData["Title"] = "Signup Page";
 
 }
 
-<p>
+ <div class="container my-4">
+     <p>
     Hello, Welcome to the signup page
 </p>
- <div class="container my-4">
-     <div class="modal-body">
-                    <form action="" method="POST">
-                        <div class="form-group">
+
+     <div class="row">
+         <div class = "col-6">
+              <form action="" method="POST" >
+                        <div class="form-row">
+                            <div class="col-6">
                             <label for="">First name</label>
                             <input type="text" class="form-control" name="" id=""  aria-describedby="emailHelp">
                             <small id="emailHelp" class="form-text text-muted"></small>
                         </div>
-                        <div class="form-group">
+                        </div>
+                        <div class="form-row">
+                            <div class="col-6">  
+                               
                             <label for="">Last name</label>
                             <input type="text" class="form-control" name="" id=""  aria-describedby="emailHelp">
                             <small id="emailHelp" class="form-text text-muted"></small>
+                     
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="">Username</label>
+                          <div class="form-row">
+                            <div class="col-6">  
+                                   <label for="">Username</label>
                             <input type="text" class="form-control" name="" id=""  aria-describedby="emailHelp">
                             <small id="emailHelp" class="form-text text-muted"></small>
+                       
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="">Email</label>
-                            <input type="email" class="form-control" name="" id=""  aria-describedby="emailHelp">
+                          <div class="form-row">
+                            <div class="col-6">  
+                                   <label for="">Email</label>
+                            <input type="email" class="form-control col-xs-4" name="" id=""  aria-describedby="emailHelp">
                             <small id="emailHelp" class="form-text text-muted"></small>
-                        </div>
                         
-                        <div class="form-group">
-                            <label for="">Password</label>
-                            <input type="password" class="form-control" name="" id="">
+                            </div>
                         </div>
+                          <div class="form-row">
+                            <div class="col-6">  
+                                 <label for="">Password</label>
+                            <input type="password" class="form-control" name="" id="">
+                       
+                            </div>
+                        </div>
+                          <div class="form-row">
+                            <div class="col-6">  
+
+                            </div>
+                        </div>
+
+                    
                         <div class="form-group form-check">
                             <input type="checkbox" class="form-check-input" id="">
                             <label class="form-check-label" for="">Check me out</label>
                         </div>
                         <button name="submit" type="submit" class="btn btn-primary">Login</button>
-                    </form>
-                </div>
+                   </form>
+         </div>
 
- </div>
+        <div class = "col-4">
+            <img src="~/img/6300959.jpg" alt="img" class="img-thumbnail rounded float-right">
+        </div>
+     </div>
+</div>
                 

@@ -11,4 +11,9 @@
     <None Remove="wwwroot\NewFolder\**" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\Login\" />
+    <Folder Include="wwwroot\img\" />
+  </ItemGroup>
+
 </Project>

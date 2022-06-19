@@ -20,5 +20,9 @@ namespace todolist.Controllers
         {
             return View();
         }
+        public ViewResult contact()
+        {
+            return View();
+        }
     }
 }

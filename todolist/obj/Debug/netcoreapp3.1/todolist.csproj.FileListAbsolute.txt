@@ -37,4 +37,5 @@ D:\visual studio\programms\todolist\todolist\obj\Debug\netcoreapp3.1\todolist.cs
 D:\visual studio\programms\todolist\todolist\obj\Debug\netcoreapp3.1\Razor\Views\auth\about.cshtml.g.cs
 D:\visual studio\programms\todolist\todolist\obj\Debug\netcoreapp3.1\Razor\Views\auth\signup.cshtml.g.cs
 D:\visual studio\programms\todolist\todolist\obj\Debug\netcoreapp3.1\Razor\Views\auth\login.cshtml.g.cs
-D:\visual studio\programms\todolist\todolist\obj\Debug\netcoreapp3.1\Razor\Views\Login\dashboard.cshtml.g.cs
+D:\visual studio\programms\todolist\todolist\obj\Debug\netcoreapp3.1\Razor\Views\auth\dashboard.cshtml.g.cs
+D:\visual studio\programms\todolist\todolist\obj\Debug\netcoreapp3.1\Razor\Views\auth\contact.cshtml.g.cs
