@@ -1,0 +1,56 @@
+﻿@{
+    ViewData["Title"] = "Create List";
+}
+@*@model todolist.Models.Items;*@
+@model IEnumerable<todolist.Models.Items>
+
+ <div class="container my-4">
+        <h2 class="text-center">TODOs List</h2>
+        <div id="items" class="my-4">
+            <div class= "col-3">
+
+                <a class="nav-link text-dark btn-primary" asp-area="" asp-controller="Item" asp-action="Create">Create Items</a>
+            </div>
+        @if(TempData["msg"] is not null)
+        {
+            <div class="alert alert-success">@TempData["msg"]</div>
+        }
+        @if(TempData["error"] is not null)
+        {
+            <div class="alert alert-danger"> @TempData["error"]</div>
+        }
+        <h2>Your Items</h2>
+            <table class="table">
+                <thead>
+                  <tr>
+                    @*<th scope="col">SNo</th>*@
+                    <th scope="col">Item Id</th>
+                    <th scope="col">Item Title</th>
+                    <th scope="col">Item Tag</th>
+                    <th scope="col">Item Description</th> 
+                    <th scope="col">Actions</th> 
+                  </tr>
+                </thead>
+                <tbody>
+                 
+                      @foreach (var i in Model)
+                     {
+                         
+                         <tr>
+                            <td>@i.Id</td>
+                            <td>@i.ItemTitle</td>
+                            <td>@i.ItemTag</td> 
+                            <td>@i.ItemDescription</td> 
+                            <td>
+                                <a class="btn btn-sm btn-primary" asp-controller="Item" asp-action="Edit" asp-route-id="@i.Id">Edit</a>
+                                <a class="btn btn-sm btn-danger"  asp-controller = "Item" asp-action="Done" asp-route-id = "@i.Id">Done</a>
+                            </td>
+                        </tr>
+                     }
+
+                  
+                </tbody>
+              </table>
+        </div>
+    </div>
+

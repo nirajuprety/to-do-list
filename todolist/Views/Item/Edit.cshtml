@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Edit List";
+}
+@model todolist.Models.Items
+ <div class="container my-4">
+        <h2 class="text-center">TODOs List</h2>
+    @if (TempData["msg"] is not null)
+    {
+        <div class="alert alert-success">@TempData["msg"]</div>
+    }
+     @if (TempData["error"] is not null)
+    {
+        <div class="alert alert-danger">@TempData["error"]</div>
+    }
+    <form method= "post" asp-controller="Item" asp-action="Edit">
+        <input type="hidden" asp-for="Id"/>
+        
+            <div class="form-group">
+                <label asp-for="ItemTitle">Title</label>
+                <input asp-for="ItemTitle" type="text" class="form-control" id="ItemTitle" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">Add an item to the list</small>
+            </div>
+            
+            <div class="form-group">
+                <label asp-for="ItemTag">Tag</label>
+                <input asp-for="ItemTag" type="text" class="form-control" id="ItemTag" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">Add an item to the list</small>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="ItemDescription">Description</label>
+                <textarea asp-for="ItemDescription" class="form-control" id="ItemDescription" rows="3"></textarea>
+            </div>
+            
+
+            <button type="submit" id="add" class="btn btn-primary">Update list</button>
+         
+         </form>
+
+    </div>
+
